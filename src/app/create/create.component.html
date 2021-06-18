@@ -1,0 +1,27 @@
+<section class="create-form">
+    <h1>Create a new account</h1>
+    <form method="post">
+        <label for="fullname">Full name</label>
+        <input type="text" name="fullname" placeholder="Write your name and last name" [(ngModel)]="fullname">
+
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Write a unique username" [(ngModel)]="username">
+
+        <label for="mail">Mail</label>
+        <input type="text" name="mail" placeholder="Write your mail" [(ngModel)]="mail">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Write a decent password like Fgh672!@" [(ngModel)]="password">
+        
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" name="confirmPassword" placeholder="Write your password again" [(ngModel)]="confirmPassword">
+    </form>
+
+    <div class="wrapper-btns">
+        <button type="button" class="btn btn-success" (click)="createUser()">Register</button>
+
+        <a routerLink="">
+            <button type="button" class="btn btn-danger">Cancel</button>
+        </a>
+    </div>
+</section>

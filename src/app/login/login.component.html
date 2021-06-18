@@ -1,0 +1,18 @@
+<section class="login-form">
+    <h1>{{ title }}</h1>
+
+    <form method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Write your username" [(ngModel)]="username">
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Write your password" [(ngModel)]="password">
+    </form>
+
+    <div class="wrapper-btns">
+        <button class="btn btn-success" type="button" (click)="authenticate()">Sigh in</button>
+        <a routerLink="/create">
+            <button class="btn btn-primary" type="button">Sigh up</button>
+        </a>
+    </div>
+</section>

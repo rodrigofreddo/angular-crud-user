@@ -1,0 +1,21 @@
+.login-form {
+    width: 500px;
+    margin: auto;
+}
+
+.login-form input {
+    width: 100%;
+    display: block;
+    padding: 6px 14px;
+    margin: 8px 0 40px;
+    border: 1px solid #2f2f2f;
+    border-radius: 6px;
+    height: 40px;
+}
+
+.wrapper-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    margin-left: auto;
+}
